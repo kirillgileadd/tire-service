@@ -1,0 +1,107 @@
+.cards-item {
+   background-color: $mainColor;
+   border-radius: 10px;
+   &__inner {
+      position: relative;
+      height: 288px;
+      width: 204px;
+      padding: 15px;
+      color: $textcolor;
+      &::after {
+         content: '';
+         position: absolute;
+         background-image: url(../../../../images/dist/sedan.svg);
+         width: 108px;
+         height: 108px;
+         bottom: 0;
+      }
+   }
+   &__price {
+      margin-bottom: 13px;
+      padding: 5px;
+      border-radius: 5px;
+      width: 80px;
+      color: #534407;
+      background-color: #DEB905;
+   }
+   &__title {
+      color: #000;
+      font-weight: 800;
+      font-size: 19px;
+      line-height: 25px;
+   }
+   &_first {
+      .cards-item {
+         &__inner {
+            background-image: url(../../../../images/dist/cardBg.png);
+            padding: 65px 35px;
+            width: 412px;
+            &::after {
+               display: none;
+            }
+         }
+         &__title {
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 41px;
+            padding-bottom: 19px;
+            position: relative;
+            margin-bottom: 20px;
+            &::after {
+               position: absolute;
+               content: '';
+               height: 5px;
+               width: 88px;
+               bottom: 0;
+               left: 0;
+               background-color: #171717;
+            }
+         }
+         &__text {
+            color: #000;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+         }
+      }
+   }
+   &_jeep {
+      background-color: #4B5257;
+      .cards-item {
+         &__inner {
+            &::after {
+               content: '';
+               position: absolute;
+               background-image: url(../../../../images/dist/jeepOne.svg);
+               width: 108px;
+               height: 108px;
+            }
+         }
+         &__price {
+            background-color: #B0B0B0;
+            color:  #FFFFFF;
+         }
+         &__title {
+            color: #FFFFFF;
+         }
+      }
+   }
+   &_truck {
+      background-color: #5BBFC8;
+      .cards-item {
+         &__inner {
+            &::after {
+               content: '';
+               position: absolute;
+               background-image: url(../../../../images/dist/truck.svg);
+               width: 123px;
+               height: 123px;
+            }
+         }
+         &__price {
+            background-color: #49A1A9;
+            color:  #1E4D54;
+         }
+      }
+   }
+}

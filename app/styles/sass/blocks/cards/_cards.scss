@@ -1,0 +1,31 @@
+.cards {
+   &__inner {
+      padding-top: 85px;
+      padding-bottom: 92px;
+      color: #fff;
+   }
+   &__name {
+      max-width: 620px;
+      margin-bottom: 61px;
+   }
+   &__title {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 64px;
+      line-height: 80px;
+      margin-bottom: 10px;
+   }
+   &__text {
+      font-size: 18px;
+      line-height: 25px;
+   }
+   &__button {
+      margin-bottom: 85px;
+   }
+   &__list {
+      display: flex;
+   }
+   &__item {
+      margin-right: 10px;
+   }
+}

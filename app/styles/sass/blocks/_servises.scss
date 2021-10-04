@@ -1,0 +1,90 @@
+.servises {
+   width: 100%;
+   background-color: #f6f4f4;
+   display: flex;
+   justify-content: center;
+   &__inner {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   &__name {
+      text-align: center;
+      margin-bottom: 63px;
+   }
+   &__title {
+      font-weight: 800;
+      font-size: 45px;
+      line-height: 55px;
+      text-transform: uppercase;
+   }
+   &__text {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 35px;
+      span {
+         padding: 5px;
+         background-color: $mainColor;
+         margin-right: 7px;
+         border-radius: 5px;
+      }
+   }
+   &__body {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__img {
+      width: 50%;
+   }
+   &__content {
+      width: 50%;
+      padding: 50px 70px;
+   }
+   &__list {
+      margin-bottom: 50px;
+   }
+   &__item {
+      color: $textcolor;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 45px;
+      position: relative;
+      &::after {
+         content: '';
+         position: absolute;
+         width: 5px;
+         height: 25px;
+         left: -20px;
+         top: 10px;
+         border-radius: 5px;
+         background-color: $textcolor;
+      }
+   }
+   &__input-box {
+      display: flex;
+      flex-direction: column;
+   }
+   &__subinput-text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      margin-left: 20px;
+      margin-bottom: 7px;
+   }
+   &__input {
+      width: 350px;
+      border: none;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 25px;
+      &::placeholder {
+         color: $textcolor;
+      }
+   }
+   &__button {
+      width: 250px;
+   }
+}

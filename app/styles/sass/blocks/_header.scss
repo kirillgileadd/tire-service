@@ -1,0 +1,43 @@
+.header {
+   background-color: #f6f4f4;
+   background-image: url(../../../images/dist/headerBg.png);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 15px;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+   }
+   &__list {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      max-width: 401px;
+   }
+   &__item {
+      list-style-type: none;
+      margin-right: 30px;
+     
+   }
+   &__link {
+      color: #fff;
+      font-weight: 800;
+   }
+   &__buttons {
+     
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+     
+   }
+   &__phone {
+      color: #fff;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 27px;
+      margin-bottom: 20px;
+      margin-right: 15px;
+   }
+}
