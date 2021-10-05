@@ -1,0 +1,20 @@
+.form {
+   display: flex;
+   flex-direction: column;
+   &__subinput-text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      margin-left: 20px;
+      margin-bottom: 8px;
+   }
+   &__input {
+      border: none;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      &::placeholder {
+         color: $textcolor;
+      }
+   }
+}

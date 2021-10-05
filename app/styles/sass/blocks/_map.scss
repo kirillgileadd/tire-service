@@ -1,0 +1,59 @@
+.map {
+   &__inner {
+      background-image: url(../../../images/dist/mapBg.png);
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__content {
+      width: 50%;
+      height: 100%;
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+   }
+   &__name {
+      flex-basis: 502px;
+      position: relative;
+      &::after {
+         content: '';
+         position: absolute;
+         width: 7px;
+         height: 155px;
+         border-radius: 5px;
+         background-color: #fff;
+         left: -27px;
+         top: 3px;
+      }
+   }
+   &__title {
+      @extend %title-font;
+      margin-bottom: 50px;
+   }
+   &__zone {
+      padding-left: 74px;
+      position: relative;
+      &::after {
+         content: '';
+         position: absolute;
+         width: 34px;
+         height: 34px;
+         border-radius: 34px;
+         background: #D07C75;
+         border: 2px solid #FFFFFF;
+         left: 6px;
+         top: -6px;
+      }
+   }
+   &__y-map {
+      width: 50%;
+      height: 100%;
+   }
+   &__y-map-img {
+      width: 100%;
+   }
+}

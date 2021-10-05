@@ -24,7 +24,11 @@
    }
    &_black {
       color: #fff;
-      background-color: $mainColor;
+      background-color: #000;
+      &:hover {
+         color: #000;
+         background-color: #fff;
+      }
    }
    &_tire {
       min-width: 250px;

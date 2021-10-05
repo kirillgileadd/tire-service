@@ -1,0 +1,40 @@
+.additional {
+   &__inner {
+      padding: 94px 0 118px 0px;
+   }
+   &__title {
+      text-align: center;
+      @extend %title-font;
+      margin-bottom: 71px;
+   }
+   &__body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__img {
+      margin-right: 244px;
+   }
+   &__list {
+      flex-basis: 400px;
+   }
+   &__item {
+      width: 100%;
+      display: block;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 35px;
+      position: relative;
+      color: $textcolor;
+      &::after {
+         content: '';
+         position: absolute;
+         width: 7px;
+         height: 7px;
+         left: -20px;
+         top: 15px;
+         border-radius: 20px;
+         background-color: $textcolor;
+      }
+   }
+}

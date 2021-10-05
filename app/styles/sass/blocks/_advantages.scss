@@ -1,0 +1,90 @@
+.advantages {
+   background-image: url(../../../images/dist/advantagesBg.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   &__inner {
+      padding: 94px 0px 233px 0px;
+   }
+   &__title {
+      text-align: center;
+      @extend %title-font;
+      margin-bottom: 160px;
+   }
+   &__content {
+      position: relative;
+   }
+   &__list {
+ 
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      justify-items: center;
+     grid-column-gap: 400px;
+   }
+   &__item {
+      padding: 30px;
+      width: 300px;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 23px;
+      color: $textcolor;
+      display: flex;
+      align-items: center;
+      position: relative;
+      border-bottom: 1px dotted $textcolor;
+      &:first-child {
+         &::after {
+            transform: rotate(45deg);
+            content: '';
+            position: absolute;
+            bottom: -104px;
+            left: 259px;
+            width: 290px;
+            height: 3px;
+            border-bottom: 1px dotted $textcolor;
+         }
+      }
+      &:nth-child(2) {
+         &::after {
+            transform: rotate(-45deg);
+            content: '';
+            position: absolute;
+            bottom: -104px;
+            left: -249px;
+            width: 290px;
+            height: 3px;
+            border-bottom: 1px dotted $textcolor;
+         }
+      }
+      &:nth-child(7) {
+         &::after {
+            transform: rotate(-45deg);
+            content: '';
+            position: absolute;
+            top: -22px;
+            left: 257px;
+            width: 290px;
+            height: 3px;
+            border-bottom: 1px dotted $textcolor;
+         }
+      }
+      &:nth-child(8) {
+         &::after {
+            transform: rotate(45deg);
+            content: '';
+            position: absolute;
+            top: -22px;
+            left: -247px;
+            width: 290px;
+            height: 3px;
+            border-bottom: 1px dotted $textcolor;
+         }
+      }
+   }
+   &__img {
+      left: 35%;
+      position: absolute;
+      top: 30px;
+   }
+}

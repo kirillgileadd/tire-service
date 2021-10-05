@@ -14,10 +14,7 @@
       margin-bottom: 63px;
    }
    &__title {
-      font-weight: 800;
-      font-size: 45px;
-      line-height: 55px;
-      text-transform: uppercase;
+      @extend %title-font;
    }
    &__text {
       font-weight: bold;
@@ -62,27 +59,16 @@
          background-color: $textcolor;
       }
    }
-   &__input-box {
+   &__form {
       display: flex;
       flex-direction: column;
    }
    &__subinput-text {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 19px;
-      margin-left: 20px;
       margin-bottom: 7px;
    }
    &__input {
       width: 350px;
-      border: none;
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 5px;
       margin-bottom: 25px;
-      &::placeholder {
-         color: $textcolor;
-      }
    }
    &__button {
       width: 250px;
