@@ -1,0 +1,74 @@
+.footer {
+   background-image: url(../../../images/dist/footerBGF.jpg);
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   &::after {
+      position: absolute;
+      content: '';
+      bottom: 50px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: gray;
+   }
+   &__inner {
+      display: flex;
+      flex-direction: column;
+   }  
+   &__main {
+      padding: 45px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+   }
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      max-width: 401px;
+
+   }
+   &__link {
+      color: #fff;
+      font-weight: 800;
+   }
+   &__phone {
+      color: $mainColor;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 27px;
+      margin-right: 15px;
+      position: relative;
+      &::after {
+         position: absolute;
+         content: '';
+         width: 13px;
+         height: 13px;
+         left: -21px;
+         top: 8px;
+         background-image: url(../../../images/dist/phone.svg);
+      }
+   }
+   &__item {
+      list-style-type: none;
+      margin-right: 30px;
+      list-style-type: none;
+     
+   }
+   &__links {
+      align-self: flex-end;
+      display: flex;
+      margin-bottom: 50px;
+   }
+   &__links-link {
+      margin-left: 30px;
+      color: $mainColor;
+   }
+   &__underboard {
+      text-align: center;
+      margin: 0 auto;
+      color: #fff;
+      padding: 15px 0;
+   }
+}
