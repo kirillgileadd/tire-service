@@ -134,7 +134,6 @@ body {
 	color: $textcolor;
 	min-width: 320px;
 	position: relative;
-	overflow-x: hidden;
 	background-color: $backColor;
 	&.lock {
 		overflow: hidden;

@@ -153,7 +153,7 @@
 
       <!-- section map -->
       <section class="map">
-         <div class="map__inner">
+         <div class="map__inner" id="map-wrap">
             <div class="map__content">
                <div class="map__name">
                   <h3 class="map__title">
@@ -164,16 +164,118 @@
                   </p>
                </div>
             </div>
-            <iframe class="map__y-map__img"
+            <iframe class="map__y-map" style="pointer-events: none;"
                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1b04954bf7e4bb71227195a89161a0d47cee3c5624ffbbfd146cd455600f029&amp;source=constructor"
-               width="100%" height="500" frameborder="0"></iframe>
-            <!-- <div class="map__y-map" id="map">
-               <img class="map__y-map-img" src="./images/dist/map.png" alt="">
-              
-            </div> -->
+               width="100%" height="565" frameborder="0">
+            </iframe>
          </div>
       </section>
       <!-- section map -->
+
+      <!-- section price -->
+      <section class="price">
+         <div class="container">
+            <div class="price__inner">
+               <h3 class="price__title">
+                  ЦЕНЫ НА МОБИЛЬНЫЙ ШИНОМОНТАЖ
+               </h3>
+               <div class="slider">
+                  <ul class="slider__name">
+                     <li class="slider__item">
+                        R 13-15
+                     </li>
+                     <li class="slider__item">
+                        R 16
+                     </li>
+                     <li class="slider__item">
+                        R 17
+                     </li>
+                     <li class="slider__item">
+                        R 18
+                     </li>
+                     <li class="slider__item">
+                        R 19
+                     </li>
+                     <li class="slider__item">
+                        R 20
+                     </li>
+                     <li class="slider__item">
+                        R 21-22
+                     </li>
+                  </ul>
+                  <div class="slider__line" id="slider">
+
+                  </div>
+               </div>
+               <div class="price__body">
+                  <ul class="price__list">
+                     <li class="price__item">
+                        Снятие и установка колеса
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Демонтаж/монтаж шины
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Балансировка колеса с учетом грузиков
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Установка клапана резинового
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Установка клапана металлического
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Установка одного датчика давления
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Очистка и смазка ступицы, шпилек/болтов
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Ремонт камеры (одно повреждение)
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Ремонт прокола жгутом
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Ремонт прокола грибком
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Ремонт бокового пореза шины
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Утилизация шины
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Коэф. для внедорожников и низкопрофильной резины
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Выезд шиномонтажа (день/ночь)
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                     <li class="price__item">
+                        Дополнительно оплачивается выезд за КАД
+                        <span class="price__item-price">200 Р</span>
+                     </li>
+                  </ul>
+                  <button class="price__button button button_tire">Вызвать шиномонтаж</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- section price -->
 
       <!-- section reviews-->
       <section class="reviews">
@@ -185,7 +287,30 @@
                <div class="reviews__body">
                   <div class="reviews-item">
                      <div class="reviews-item__video">
-                        <video poster="./images/dist/play.svg" preload="none">
+                        <video poster="./images/dist/partners/videoBg.png" id="video-1"
+                           class="video-js vjs-theme-forest" controls preload="auto">
+                           <source type="video/mp4" src="./images/dist/video/Rick.mp4">
+                           <p class="vjs-no-js">
+                              To view this video please enable JavaScript, and consider upgrading to a
+                              web browser that
+                              <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5
+                                 video</a>
+                           </p>
+                        </video>
+                     </div>
+                     <div class="reviews-item__name">
+                        <h6 class="reviews-item__title">
+                           Название компании
+                        </h6>
+                        <p class="reviews-item__text">
+                           Должность
+                        </p>
+                     </div>
+                  </div>
+                  <div class="reviews-item">
+                     <div class="reviews-item__video">
+                        <video poster="./images/dist/partners/videoBg.png" id="video-2"
+                           class="video-js vjs-theme-forest" controls preload="auto">
                            <source type="video/mp4" src="./images/dist/video/iPhomeMed.mp4">
                         </video>
                      </div>
@@ -200,7 +325,8 @@
                   </div>
                   <div class="reviews-item">
                      <div class="reviews-item__video">
-                        <video poster="./images/dist/play.svg" controls preload="metadata">
+                        <video poster="./images/dist/partners/videoBg.png" id="video-3"
+                           class="video-js vjs-theme-forest" controls preload="auto">
                            <source type="video/mp4" src="./images/dist/video/iPhomeMed.mp4">
                         </video>
                      </div>
@@ -215,22 +341,8 @@
                   </div>
                   <div class="reviews-item">
                      <div class="reviews-item__video">
-                        <video poster="./images/dist/play.svg" controls preload="metadata">
-                           <source type="video/mp4" src="./images/dist/video/iPhomeMed.mp4">
-                        </video>
-                     </div>
-                     <div class="reviews-item__name">
-                        <h6 class="reviews-item__title">
-                           Название компании
-                        </h6>
-                        <p class="reviews-item__text">
-                           Должность
-                        </p>
-                     </div>
-                  </div>
-                  <div class="reviews-item">
-                     <div class="reviews-item__video">
-                        <video poster="./images/dist/play.svg" controls preload="metadata">
+                        <video poster="./images/dist/partners/videoBg.png" id="video-4"
+                           class="video-js vjs-theme-forest" controls preload="auto">
                            <source type="video/mp4" src="./images/dist/video/iPhomeMed.mp4">
                         </video>
                      </div>
