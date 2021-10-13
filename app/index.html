@@ -2,7 +2,6 @@
 <!--#include virtual="/parts/header.html" -->
 <div class="wrapper">
    <div class="main">
-
       <!-- section servises -->
       <section class="servises">
          <div class="servises__inner">
@@ -36,7 +35,8 @@
                      <p class="servises__subinput-text form__subinput-text">
                         Ваш телефон
                      </p>
-                     <input class="servises__input form__input" type="phone" placeholder="+7 ( _ _ _ ) _ _ _  _ _  _ _">
+                     <input class="servises__input form__input" id="phone" type="phone"
+                        placeholder="+7 ( _ _ _ ) _ _ _  _ _  _ _">
                      <button class="servises__button button">Оформить заявку</button>
                   </div>
                </div>
@@ -98,7 +98,8 @@
                      Ваш телефон
                   </p>
                   <div class="mobile__input-body">
-                     <input class="mobile__input form__input" type="phone" placeholder="+7 ( _ _ _ ) _ _ _  _ _  _ _">
+                     <input class="mobile__input form__input" id="phone" type="phone"
+                        placeholder="+7 ( _ _ _ ) _ _ _  _ _  _ _">
                      <button class="mobile__button button button_black">Оформить заявку</button>
                   </div>
                </div>
@@ -180,94 +181,190 @@
                   ЦЕНЫ НА МОБИЛЬНЫЙ ШИНОМОНТАЖ
                </h3>
                <div class="slider">
-                  <ul class="slider__name">
-                     <li class="slider__item">
-                        R 13-15
-                     </li>
-                     <li class="slider__item">
-                        R 16
-                     </li>
-                     <li class="slider__item">
-                        R 17
-                     </li>
-                     <li class="slider__item">
-                        R 18
-                     </li>
-                     <li class="slider__item">
-                        R 19
-                     </li>
-                     <li class="slider__item">
-                        R 20
-                     </li>
-                     <li class="slider__item">
-                        R 21-22
-                     </li>
-                  </ul>
-                  <div class="slider__line" id="slider">
-
+                  <div class="slider__list">
+                     <input type="radio" id="radio-1" name="tabs" checked />
+                     <label class="slider__item active" data-filter=".category-a" for="radio-1">R 13-15</label>
+                     <input type="radio" id="radio-2" name="tabs" />
+                     <label class="slider__item" data-filter=".category-b" for="radio-2">R 16</label>
+                     <input type="radio" id="radio-3" name="tabs" />
+                     <label class="slider__item" data-filter=".category-d" for="radio-3">R 17</label>
+                     <input type="radio" id="radio-4" name="tabs" />
+                     <label class="slider__item" data-filter=".category-e" for="radio-4">R 18</label>
+                     <input type="radio" id="radio-5" name="tabs" />
+                     <label class="slider__item" data-filter=".category-f" for="radio-5">R 19</label>
+                     <input type="radio" id="radio-6" name="tabs" />
+                     <label class="slider__item" data-filter=".category-g" for="radio-6">R 20</label>
+                     <input type="radio" id="radio-7" name="tabs" />
+                     <label class="slider__item" data-filter=".category-h" for="radio-7">R 21-22</label>
+                     <span class="glider"></span>
                   </div>
                </div>
                <div class="price__body">
                   <ul class="price__list">
                      <li class="price__item">
                         Снятие и установка колеса
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">200 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">300 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">400 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">500 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">600 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">700 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">800 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">900 Р</span>
                      </li>
                      <li class="price__item">
                         Демонтаж/монтаж шины
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">125 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">150 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">175 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">200 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">300 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">350 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">375 Р</span>
                      </li>
                      <li class="price__item">
                         Балансировка колеса с учетом грузиков
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Установка клапана резинового
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Установка клапана металлического
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Установка одного датчика давления
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Очистка и смазка ступицы, шпилек/болтов
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Ремонт камеры (одно повреждение)
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Ремонт прокола жгутом
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Ремонт прокола грибком
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Ремонт бокового пореза шины
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Утилизация шины
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Коэф. для внедорожников и низкопрофильной резины
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Выезд шиномонтажа (день/ночь)
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                      <li class="price__item">
                         Дополнительно оплачивается выезд за КАД
-                        <span class="price__item-price">200 Р</span>
+                        <span class="price__item-price mix category-a" data-order="1">105 Р</span>
+                        <span class="price__item-price mix category-b" data-order="2">125 Р</span>
+                        <span class="price__item-price  mix category-c" data-order="3">150 Р</span>
+                        <span class="price__item-price  mix category-d" data-order="4">175 Р</span>
+                        <span class="price__item-price  mix category-e" data-order="5">200 Р</span>
+                        <span class="price__item-price  mix category-f" data-order="6">250 Р</span>
+                        <span class="price__item-price  mix category-g" data-order="7">350 Р</span>
+                        <span class="price__item-price  mix category-h" data-order="8">400 Р</span>
                      </li>
                   </ul>
                   <button class="price__button button button_tire">Вызвать шиномонтаж</button>

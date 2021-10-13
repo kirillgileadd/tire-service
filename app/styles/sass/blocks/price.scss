@@ -45,11 +45,140 @@
 }
 
 .slider {
+   align-self: flex-end;
+   margin-right: 180px;
    margin-bottom: 33px;
+   position: relative;
+   &::after {
+      content: 'Выберите Ø колёс';
+      left: -155px;
+      position: absolute;
+      top: 16px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000;
+      opacity: 0.5;
+   }
    &__name {
       display: flex;
    }
-   &__item {
-      padding: 0px 15px;
+   &__list {
+      display: flex;
+      position: relative;
+      border-radius: 10px; // just a high number to create pill effect
+      * {
+         z-index: 2;
+      }
    }
+   &__item {
+      display: flex;
+	   align-items: center;
+	   justify-content: center;
+	   height: 54px;
+      width: 90px;
+	   font-size: 1.10rem;
+      padding: 10px;
+	   font-weight: 500;
+	   border-radius: 10px; // just a high number to create pill effect
+	   cursor: pointer;
+	   transition: color 0.15s ease-in;
+      &.active {
+         transition: color 0.15s ease-in;
+         font-weight: bold;
+      }
+   }
+   &__line {
+      margin-top: 20px;
+   }
+}
+
+:root {
+	--primary-color: #185ee0;
+	--secondary-color: #e6eef9;
+}
+
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] {
+	&:checked {
+		& + label {
+			color: #000;
+		}
+	}
+}
+
+input[id="radio-1"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(0);
+		}
+	}
+}
+
+input[id="radio-2"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(100%);
+		}
+	}
+}
+
+input[id="radio-3"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(200%);
+		}
+	}
+}
+input[id="radio-4"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(300%);
+		}
+	}
+}
+
+input[id="radio-5"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(400%);
+		}
+	}
+}
+
+input[id="radio-6"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(500%);
+		}
+	}
+}
+
+input[id="radio-7"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(600%);
+		}
+	}
+}
+
+.glider {
+	position: absolute;
+	display: flex;
+	height: 54px;
+	width: 90px;
+	background-color: $mainColor;
+	z-index: 1;
+	border-radius: 10px; // just a high number to create pill effect
+	transition: 0.25s ease-out;
+}
+
+@media (max-width: 700px) {
+	.tabs {
+		transform: scale(0.6);
+	}
 }
